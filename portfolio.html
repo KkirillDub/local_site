@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфолио HTML-верстки — примеры выполненных работ OKTOLOM." />
+  <title>Примеры работ | OKTOLOM</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Шапка -->
+    <header class="header">
+      <div class="logo-block">
+        <div class="logo">
+          EliteSite<br><span>WEB DEVELOPMENT</span>
+        </div>
+        <div class="slogan">
+          <span data-lang="ru">Профессиональная HTML-верстка<br>PSD макетов</span>
+          <span data-lang="en" style="display:none;">Professional HTML layout<br>from PSD designs</span>
+        </div>
+      </div>
+
+      <!-- Язык -->
+      <button id="language-toggle" aria-label="Переключить язык"
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">
+        🌐
+      </button>
+
+      <!-- Темы -->
+      <div class="theme-selector" style="margin-right: 60px;">
+        <button id="theme-toggle" aria-haspopup="true" aria-expanded="false">Выбор темы</button>
+        <div id="theme-menu" class="theme-menu hidden" aria-label="Меню выбора темы и цвета">
+          <strong data-lang="ru">Тема:</strong>
+          <strong data-lang="en" style="display:none;">Theme:</strong>
+          <button data-theme="light" data-lang="ru">Светлая</button>
+          <button data-theme="light" data-lang="en" style="display:none;">Light</button>
+          <button data-theme="dark" data-lang="ru">Тёмная</button>
+          <button data-theme="dark" data-lang="en" style="display:none;">Dark</button>
+          <button data-theme="system" data-lang="ru">Системная</button>
+          <button data-theme="system" data-lang="en" style="display:none;">System</button>
+          <hr>
+          <strong data-lang="ru">Цвет:</strong>
+          <strong data-lang="en" style="display:none;">Color:</strong>
+          <button data-color="blue" data-lang="ru">Синий</button>
+          <button data-color="blue" data-lang="en" style="display:none;">Blue</button>
+          <button data-color="green" data-lang="ru">Зелёный</button>
+          <button data-color="green" data-lang="en" style="display:none;">Green</button>
+          <button data-color="purple" data-lang="ru">Фиолетовый</button>
+          <button data-color="purple" data-lang="en" style="display:none;">Purple</button>
+          <hr>
+          <strong data-lang="ru">Фон:</strong>
+          <strong data-lang="en" style="display:none;">Background:</strong>
+          <button data-bg="none" data-lang="ru">Без фона</button>
+          <button data-bg="none" data-lang="en" style="display:none;">No background</button>
+          <button data-bg="background1.jpg" data-lang="ru">Фон 1</button>
+          <button data-bg="background1.jpg" data-lang="en" style="display:none;">Background 1</button>
+          <button data-bg="background2.jpg" data-lang="ru">Фон 2</button>
+          <button data-bg="background2.jpg" data-lang="en" style="display:none;">Background 2</button>
+          <button data-bg="background3.jpg" data-lang="ru">Фон 3</button>
+          <button data-bg="background3.jpg" data-lang="en" style="display:none;">Background 3</button>
+          <button data-bg="background4.jpg" data-lang="ru">Фон 4</button>
+          <button data-bg="background4.jpg" data-lang="en" style="display:none;">Background 4</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang="ru">Главная</a><a href="index.html" data-lang="en" style="display:none;">Home</a></li>
+        <li><a href="process.html" data-lang="ru">Процесс</a><a href="process.html" data-lang="en" style="display:none;">Process</a></li>
+        <li><a href="portfolio.html" class="active" data-lang="ru">Примеры работ</a><a href="portfolio.html" class="active" data-lang="en" style="display:none;">Portfolio</a></li>
+        <li><a href="order.html" data-lang="ru">Заказать</a><a href="order.html" data-lang="en" style="display:none;">Order</a></li>
+        <li><a href="contacts.html" data-lang="ru">Контакты</a><a href="contacts.html" data-lang="en" style="display:none;">Contacts</a></li>
+        <li><a href="help.html" data-lang="ru">Справка</a><a href="help.html" data-lang="en" style="display:none;">Help</a></li>
+        <li><a href="about.html" data-lang="ru">О нас</a><a href="about.html" data-lang="en" style="display:none;">About me</a></li>
+      </ul>
+    </nav>
+
+    <!-- Контент -->
+    <div class="main">
+      <div class="content">
+        <h1 data-lang="ru">Примеры выполненных работ</h1>
+        <h1 data-lang="en" style="display:none;">Portfolio Examples</h1>
+
+        <p data-lang="ru">Ниже представлены некоторые из проектов, выполненных нашей командой. Каждый из них отражает индивидуальный подход, внимание к деталям и высокое качество верстки.</p>
+        <p data-lang="en" style="display:none;">Below are some of the projects completed by our team. Each reflects a personalized approach, attention to detail, and high-quality layout.</p>
+
+        <div class="portfolio-list">
+          <div class="portfolio-item">
+            <h3 data-lang="ru">Сайт агентства недвижимости</h3>
+            <h3 data-lang="en" style="display:none;">Real Estate Agency Website</h3>
+            <p data-lang="ru">Адаптивная верстка лендинга с картой и формами обратной связи.</p>
+            <p data-lang="en" style="display:none;">Responsive landing page with integrated map and contact forms.</p>
+            <a href="#" data-lang="ru">Посмотреть</a>
+            <a href="#" data-lang="en" style="display:none;">View</a>
+          </div>
+
+          <div class="portfolio-item">
+            <h3 data-lang="ru">Интернет-магазин электроники</h3>
+            <h3 data-lang="en" style="display:none;">Electronics Online Store</h3>
+            <p data-lang="ru">Многостраничный макет с каталогом, карточками товаров и фильтрами.</p>
+            <p data-lang="en" style="display:none;">Multi-page layout with catalog, product cards and filters.</p>
+            <a href="#" data-lang="ru">Посмотреть</a>
+            <a href="#" data-lang="en" style="display:none;">View</a>
+          </div>
+
+          <div class="portfolio-item">
+            <h3 data-lang="ru">Промо-сайт мобильного приложения</h3>
+            <h3 data-lang="en" style="display:none;">Mobile App Promo Site</h3>
+            <p data-lang="ru">Резиновая верстка, плавные анимации, совместимость с мобильными устройствами.</p>
+            <p data-lang="en" style="display:none;">Fluid layout with animations and mobile compatibility.</p>
+            <a href="#" data-lang="ru">Посмотреть</a>
+            <a href="#" data-lang="en" style="display:none;">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Сайдбар -->
+      <aside class="sidebar">
+        <div class="box">
+          <h2 data-lang="ru"><span class="red">Особенности</span> наших работ:</h2>
+          <h2 data-lang="en" style="display:none;"><span class="red">Features</span> of our work:</h2>
+          <ul>
+                        <li data-lang="ru">Пиксель в пиксель по макету</li>
+            <li data-lang="en" style="display:none;">Pixel-perfect layout</li>
+            <li data-lang="ru">Кроссбраузерность</li>
+            <li data-lang="en" style="display:none;">Cross-browser compatibility</li>
+            <li data-lang="ru">Быстрая загрузка</li>
+            <li data-lang="en" style="display:none;">Fast loading</li>
+            <li data-lang="ru">Адаптивность</li>
+            <li data-lang="en" style="display:none;">Responsive design</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3 data-lang="ru">Принимаем оплату:</h3>
+          <h3 data-lang="en" style="display:none;">We accept payments:</h3>
+          <ul>
+            <li>Webmoney</li>
+            <li data-lang="ru">Яндекс.Деньги</li>
+            <li data-lang="en" style="display:none;">Yandex.Money</li>
+            <li data-lang="ru">Безналичный расчёт</li>
+            <li data-lang="en" style="display:none;">Bank transfer</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="info-bar">
+        <p data-lang="ru">EliteSite — современная веб-студия по HTML-верстке. Мы превращаем ваши идеи в качественные адаптивные макеты.</p>
+        <p data-lang="en" style="display:none;">EliteSite — modern web studio for HTML layout. We turn your ideas into quality responsive templates.</p>
+        <p data-lang="ru">© 2025 EliteSite. Все права защищены.</p>
+        <p data-lang="en" style="display:none;">© 2025 EliteSite. All rights reserved.</p>
+        <p data-lang="ru" style="display: none;">Версия 0.0.2</p>
+        <p data-lang="en" style="display: none;">Version 0.0.2</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

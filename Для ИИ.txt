@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal site — web development, portfolio, contacts." />
+  <title>Home | EliteSite</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../web/favicon32.png" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Шапка -->
+        <header class="header" style="position: relative;">
+            <div class="logo-block">
+                <div class="logo">
+                    EliteSite<br><span>WEB DEVELOPMENT</span>
+                </div>
+                <div class="slogan">
+                    <span data-lang="en" style="display:none;">Professional HTML layout<br>from PSD designs</span>
+                </div>
+            </div>
+
+            <!-- Кнопка выбора языка -->
+            <button id="language-toggle" aria-label="Переключить язык" style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">
+                🌐
+            </button>
+
+            <!-- Кнопка и выпадающее меню тем -->
+            <div class="theme-selector" style="margin-right: 60px;">
+                <button id="theme-toggle" aria-haspopup="true" aria-expanded="false">Выбор темы</button>
+
+                <div id="theme-menu" class="theme-menu hidden" aria-label="Меню выбора темы и цвета">
+                    <strong data-lang="en" style="display:none;">Theme:</strong>
+                    <button data-theme="light" data-lang="en" style="display:none;">Light</button>
+                    <button data-theme="dark" data-lang="en" style="display:none;">Dark</button>
+                    <button data-theme="system" data-lang="en" style="display:none;">System</button>
+                    <hr>
+                    <!-- Фон -->
+                     <strong data-lang="en" style="display:none;">Background:</strong>
+                     <button data-bg="none" data-lang="en" style="display:none;">No background</button>
+                     <button data-bg="background1.jpg" data-lang="en" style="display:none;">Background 1</button>
+                     <button data-bg="background2.jpg" data-lang="en" style="display:none;">Background 2</button>
+                     <button data-bg="background3.jpg" data-lang="en" style="display:none;">Background 3</button>
+                     <button data-bg="background4.jpg" data-lang="en" style="display:none;">Background 4</button>
+                  </div>
+              </div>
+        </header>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <div class="content">
+        <h1>You draw, <span class="blue">we code.</span></h1>
+        <p>We turn your design mockups into clean, cross-browser, and responsive HTML layouts.</p>
+        <p>Working with us, you get a professional approach, clear deadlines, and quality implementation.</p>
+        <section class="advantages">
+          <h2>Our advantages</h2>
+          <ul>
+            <li>Precise layout for all devices</li>
+            <li>Website speed optimization</li>
+            <li>Modern HTML5 and CSS3 standards</li>
+            <li>SEO support and semantic structure</li>
+            <li>Bug fixes and support</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="box">
+          <h2><span class="red">In HTML</span> code we implement:</h2>
+          <ul>
+            <li>Block layout (div)</li>
+            <li>Responsive layout</li>
+            <li>Cross-browser compatibility</li>
+            <li>Valid semantic code</li>
+            <li>SEO optimization</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Payment methods:</h3>
+          <ul><li>Webmoney</li><li>Yandex.Money</li><li>Bank transfer</li></ul>
+        </div>
+        <div class="box testimonials-sidebar">
+          <h3>Customer reviews</h3>
+          <form id="testimonial-form" class="testimonial-form">
+            <input type="text" id="name" placeholder="Your name" required />
+            <textarea id="message" placeholder="Your testimonial" rows="3" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div id="testimonial-list"></div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="info-bar">
+        <p>EliteSite — modern web studio for HTML layout.</p>
+        <p>© 2025 EliteSite. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

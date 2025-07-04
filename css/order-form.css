@@ -1,0 +1,110 @@
+/* 🌈 Цветовая система (если не переопределена в style.css) */
+:root {
+  --primary-hue: 210;
+  --form-bg: hsl(var(--primary-hue), 30%, 99%);
+  --form-border: hsl(var(--primary-hue), 40%, 80%);
+  --form-focus: hsl(var(--primary-hue), 70%, 55%);
+  --button-color: hsl(var(--primary-hue), 80%, 50%);
+  --button-hover: hsl(var(--primary-hue), 80%, 40%);
+}
+
+/* 🧾 Общая форма */
+.order-form {
+  background: var(--form-bg);
+  border: 1px solid var(--form-border);
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+  max-width: 600px;
+  margin: 20px auto;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.order-form:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.order-form label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 1px solid var(--form-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fefefe;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+  border-color: var(--form-focus);
+  box-shadow: 0 0 6px rgba(58,122,254,0.2);
+  outline: none;
+}
+
+/* 🎯 Кнопки */
+.order-form button[type="submit"],
+.order-form button[type="button"] {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.order-form button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-1px);
+}
+
+.order-form button:active {
+  transform: scale(0.98);
+}
+
+/* 🧮 Блок результата */
+.result-block {
+  background: #292929;
+  border-left: 4px solid var(--form-focus);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+/* 📱 Адаптивность */
+@media (max-width: 600px) {
+  .order-form {
+    padding: 16px;
+  }
+
+  .order-form button {
+    width: 100%;
+    text-align: center;
+  }
+}

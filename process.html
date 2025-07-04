@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Процесс разработки сайта — этапы работы OKTOLOM." />
+  <title>Процесс | OKTOLOM</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Шапка -->
+    <header class="header">
+      <div class="logo-block">
+        <div class="logo">
+          EliteSite<br><span>WEB DEVELOPMENT</span>
+        </div>
+        <div class="slogan">
+          <span data-lang="ru">Профессиональная HTML-верстка<br>PSD макетов</span>
+          <span data-lang="en" style="display:none;">Professional HTML layout<br>from PSD designs</span>
+        </div>
+      </div>
+
+      <!-- Язык -->
+      <button id="language-toggle" aria-label="Переключить язык"
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">
+        🌐
+      </button>
+
+      <!-- Темы -->
+      <div class="theme-selector" style="margin-right: 60px;">
+        <button id="theme-toggle" aria-haspopup="true" aria-expanded="false">Выбор темы</button>
+        <div id="theme-menu" class="theme-menu hidden" aria-label="Меню выбора темы и цвета">
+          <strong data-lang="ru">Тема:</strong>
+          <strong data-lang="en" style="display:none;">Theme:</strong>
+          <button data-theme="light" data-lang="ru">Светлая</button>
+          <button data-theme="light" data-lang="en" style="display:none;">Light</button>
+          <button data-theme="dark" data-lang="ru">Тёмная</button>
+          <button data-theme="dark" data-lang="en" style="display:none;">Dark</button>
+          <button data-theme="system" data-lang="ru">Системная</button>
+          <button data-theme="system" data-lang="en" style="display:none;">System</button>
+          <hr>
+          <strong data-lang="ru">Цвет:</strong>
+          <strong data-lang="en" style="display:none;">Color:</strong>
+          <button data-color="blue" data-lang="ru">Синий</button>
+          <button data-color="blue" data-lang="en" style="display:none;">Blue</button>
+          <button data-color="green" data-lang="ru">Зелёный</button>
+          <button data-color="green" data-lang="en" style="display:none;">Green</button>
+          <button data-color="purple" data-lang="ru">Фиолетовый</button>
+          <button data-color="purple" data-lang="en" style="display:none;">Purple</button>
+          <hr>
+          <strong data-lang="ru">Фон:</strong>
+          <strong data-lang="en" style="display:none;">Background:</strong>
+          <button data-bg="none" data-lang="ru">Без фона</button>
+          <button data-bg="none" data-lang="en" style="display:none;">No background</button>
+          <button data-bg="background1.jpg" data-lang="ru">Фон 1</button>
+          <button data-bg="background1.jpg" data-lang="en" style="display:none;">Background 1</button>
+          <button data-bg="background2.jpg" data-lang="ru">Фон 2</button>
+          <button data-bg="background2.jpg" data-lang="en" style="display:none;">Background 2</button>
+          <button data-bg="background3.jpg" data-lang="ru">Фон 3</button>
+          <button data-bg="background3.jpg" data-lang="en" style="display:none;">Background 3</button>
+          <button data-bg="background4.jpg" data-lang="ru">Фон 4</button>
+          <button data-bg="background4.jpg" data-lang="en" style="display:none;">Background 4</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang="ru">Главная</a><a href="index.html" data-lang="en" style="display:none;">Home</a></li>
+        <li><a href="process.html" class="active" data-lang="ru">Процесс</a><a href="process.html" class="active" data-lang="en" style="display:none;">Process</a></li>
+        <li><a href="portfolio.html" data-lang="ru">Примеры работ</a><a href="portfolio.html" data-lang="en" style="display:none;">Portfolio</a></li>
+        <li><a href="order.html" data-lang="ru">Заказать</a><a href="order.html" data-lang="en" style="display:none;">Order</a></li>
+        <li><a href="contacts.html" data-lang="ru">Контакты</a><a href="contacts.html" data-lang="en" style="display:none;">Contacts</a></li>
+        <li><a href="help.html" data-lang="ru">Справка</a><a href="help.html" data-lang="en" style="display:none;">Help</a></li>
+        <li><a href="about.html" data-lang="ru">О нас</a><a href="about.html" data-lang="en" style="display:none;">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Контент -->
+    <div class="main">
+      <div class="content">
+        <h1 data-lang="ru">Этапы верстки сайта</h1>
+        <h1 data-lang="en" style="display:none;">Website Layout Stages</h1>
+
+        <p data-lang="ru">Работа над проектом включает несколько ключевых этапов:</p>
+        <p data-lang="en" style="display:none;">Project development consists of several essential stages:</p>
+
+        <ol>
+          <li data-lang="ru"><strong>Анализ макета:</strong> изучаем структуру, элементы и особенности дизайна.</li>
+          <li data-lang="en" style="display:none;"><strong>Design analysis:</strong> reviewing layout structure, elements, and style.</li>
+
+          <li data-lang="ru"><strong>Подготовка файлов:</strong> выделяем графику, иконки, шрифты.</li>
+          <li data-lang="en" style="display:none;"><strong>Asset preparation:</strong> extracting graphics, icons, and fonts.</li>
+
+          <li data-lang="ru"><strong>HTML-разметка:</strong> создаем семантически корректную структуру страницы.</li>
+          <li data-lang="en" style="display:none;"><strong>HTML markup:</strong> building a semantically accurate page structure.</li>
+
+          <li data-lang="ru"><strong>CSS-стилизация:</strong> придаем блоку стиль, соответствующий макету.</li>
+          <li data-lang="en" style="display:none;"><strong>CSS styling:</strong> styling blocks to match the design.</li>
+
+          <li data-lang="ru"><strong>Адаптация:</strong> обеспечиваем отображение на разных устройствах и экранах.</li>
+          <li data-lang="en" style="display:none;"><strong>Responsive adaptation:</strong> ensuring proper display on various devices.</li>
+
+          <li data-lang="ru"><strong>Тестирование:</strong> проверка кроссбраузерности, валидации и скорости загрузки.</li>
+          <li data-lang="en" style="display:none;"><strong>Testing:</strong> validating browser compatibility and performance.</li>
+        </ol>
+
+        <p data-lang="ru">Каждый этап сопровождается внутренней проверкой качества и обсуждением с заказчиком. Мы стремимся к максимальной точности в реализации и прозрачности процесса.</p>
+        <p data-lang="en" style="display:none;">Each stage includes internal quality control and collaboration with the client. We strive for precision and transparency throughout the process.</p>
+      </div>
+
+      <!-- Сайдбар -->
+      <aside class="sidebar">
+        <div class="box">
+          <h2 data-lang="ru"><span class="red">Наш</span> подход:</h2>
+          <h2 data-lang="en" style="display:none;"><span class="red">Our</span> Approach:</h2>
+          <ul>
+            <li data-lang="ru">Прозрачность и поэтапная сдача</li>
+            <li data-lang="en" style="display:none;">Stage-by</li>
+                        <li data-lang="ru">Отчетность и поддержка</li>
+            <li data-lang="en" style="display:none;">Reporting and support</li>
+            <li data-lang="ru">Быстрая коммуникация</li>
+            <li data-lang="en" style="display:none;">Fast communication</li>
+            <li data-lang="ru">Использование современных технологий</li>
+            <li data-lang="en" style="display:none;">Use of modern technologies</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3 data-lang="ru">Принимаем оплату:</h3>
+          <h3 data-lang="en" style="display:none;">We Accept Payments:</h3>
+          <ul>
+            <li>Webmoney</li>
+            <li data-lang="ru">Яндекс.Деньги</li>
+            <li data-lang="en" style="display:none;">Yandex.Money</li>
+            <li data-lang="ru">Безналичный расчёт</li>
+            <li data-lang="en" style="display:none;">Bank transfer</li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="info-bar">
+        <p data-lang="ru">EliteSite — современная веб-студия по HTML-верстке. Мы превращаем ваши идеи в качественные адаптивные макеты.</p>
+        <p data-lang="en" style="display:none;">EliteSite — modern web studio for HTML layout. We turn your ideas into quality responsive templates.</p>
+        <p data-lang="ru">© 2025 EliteSite. Все права защищены.</p>
+        <p data-lang="en" style="display:none;">© 2025 EliteSite. All rights reserved.</p>
+        <p data-lang="ru" style="display:none;">Версия 0.0.2</p>
+        <p data-lang="en" style="display:none;">Version 0.0.2</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/script.js"></script>
+</body>
+</html>

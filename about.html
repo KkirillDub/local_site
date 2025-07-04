@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Обо мне — команда OKTOLOM, опыт и навыки." />
+  <title data-lang="ru">Обо мне | OKTOLOM</title>
+  <title data-lang="en" style="display:none;">About me | OKTOLOM</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="logo-block">
+        <div class="logo">EliteSite<br><span>WEB DEVELOPMENT</span></div>
+        <div class="slogan">
+          <span data-lang="ru">Профессиональная HTML-верстка<br>PSD макетов</span>
+          <span data-lang="en" style="display:none;">Professional HTML layout<br>from PSD designs</span>
+        </div>
+      </div>
+
+      <!-- Переключение языка -->
+      <button id="language-toggle" aria-label="Переключить язык" style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">🌐</button>
+
+      <!-- Меню темы и цвета -->
+      <!-- ... как в других страницах ... -->
+    </header>
+
+    <!-- Навигация -->
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang="ru">Главная</a><a href="index.html" data-lang="en" style="display:none;">Home</a></li>
+                <li><a href="process.html" data-lang="ru">Процесс</a><a href="process.html" data-lang="en" style="display:none;">Process</a></li>
+                <li><a href="portfolio.html" data-lang="ru">Примеры работ</a><a href="portfolio.html" data-lang="en" style="display:none;">Portfolio</a></li>
+                <li><a href="order.html" data-lang="ru">Заказать</a><a href="order.html" data-lang="en" style="display:none;">Order</a></li>
+                <li><a href="contacts.html" data-lang="ru">Контакты</a><a href="contacts.html" data-lang="en" style="display:none;">Contacts</a></li>
+                <li><a href="help.html" data-lang="ru">Справка</a><a href="help.html" data-lang="en" style="display:none;">Help</a></li>
+                <li><a href="about.html" data-lang="ru" class="active">О нас</a><a href="about.html" class="active" data-lang="en" style="display:none;">Help</a></li>
+      </ul>
+    </nav>
+
+    <!-- Контент -->
+    <div class="main">
+      <div class="content about-me">
+        <h1>
+          <span data-lang="ru">Обо мне</span>
+          <span data-lang="en" style="display:none;">About Me</span>
+        </h1>
+
+        <div class="profile">
+          <img src="images/profile.jpg" alt="Фото OKTOLOM" class="profile-photo" />
+          <div class="bio">
+            <h2>
+              <span data-lang="ru">Команда OKTOLOM</span>
+              <span data-lang="en" style="display:none;">Team OKTOLOM</span>
+            </h2>
+            <p data-lang="ru">Мы — команда профессионалов в области веб-разработки с опытом более 7 лет. Создаём качественную и адаптивную верстку, уделяя внимание каждой детали.</p>
+            <p data-lang="en" style="display:none;">We are a team of web development professionals with over 7 years of experience. We build high-quality and responsive layouts with attention to every detail.</p>
+            <p data-lang="ru">Наша миссия — помогать бизнесу эффективно представлять себя в интернете через современные и удобные сайты.</p>
+            <p data-lang="en" style="display:none;">Our mission is to help businesses represent themselves online through modern and user-friendly websites.</p>
+          </div>
+        </div>
+
+        <!-- Навыки -->
+        <section class="skills">
+          <h2 data-lang="ru">Навыки</h2>
+          <h2 data-lang="en" style="display:none;">Skills</h2>
+          <ul class="skills-list">
+            <li data-lang="ru">HTML5</li><li data-lang="en" style="display:none;">HTML5</li>
+            <li data-lang="ru">CSS3 / Flexbox / Grid</li><li data-lang="en" style="display:none;">CSS3 / Flexbox / Grid</li>
+            <li data-lang="ru">JavaScript / jQuery</li><li data-lang="en" style="display:none;">JavaScript / jQuery</li>
+            <li data-lang="ru">Адаптивная верстка</li><li data-lang="en" style="display:none;">Responsive layout</li>
+            <li data-lang="ru">Кроссбраузерность</li><li data-lang="en" style="display:none;">Cross-browser compatibility</li>
+            <li data-lang="ru">Оптимизация скорости загрузки</li><li data-lang="en" style="display:none;">Website speed optimization</li>
+          </ul>
+        </section>
+
+        <!-- Опыт -->
+        <section class="experience">
+          <h2 data-lang="ru">Опыт работы</h2>
+          <h2 data-lang="en" style="display:none;">Work Experience</h2>
+          <ul>
+            <li data-lang="ru">2020–2025 — Ведущий верстальщик в OKTOLOM</li>
+            <li data-lang="en" style="display:none;">2020–2025 — Lead frontend developer at OKTOLOM</li>
+            <li data-lang="ru">2017–2020 — Фриланс: лендинги и интернет-магазины</li>
+            <li data-lang="en" style="display:none;">2017–2020 — Freelance: landing pages and online stores</li>
+            <li data-lang="ru">2015–2017 — Ассистент веб-разработчика в WebStudio</li>
+            <li data-lang="en" style="display:none;">2015–2017 — Web developer assistant at WebStudio</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Сайдбар -->
+      <aside class="sidebar">
+        <div class="box">
+          <h3 data-lang="ru">Связаться с нами</h3>
+          <h3 data-lang="en" style="display:none;">Contact Us</h3>
+          <p>Email: <a href="mailto:info@oktocom.ru">info@oktocom.ru</a></p>
+          <p data-lang="ru">Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+          <p data-lang="en" style="display:none;">Phone: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="info-bar">
+        <p data-lang="ru">EliteSite — современная веб-студия по HTML-верстке. Мы превращаем ваши идеи в качественные адаптивные макеты.</p>
+        <p data-lang="en" style="display:none;">EliteSite — modern web studio for HTML layout. We turn your ideas into quality responsive templates.</p>
+        <p data-lang="ru">© 2025 EliteSite. Все права защищены.</p>
+        <p data-lang="en" style="display:none;">© 2025 EliteSite. All rights reserved.</p>
+        <p data-lang="ru" style="display: none;">Версия 0.0.2</p>
+        <p data-lang="en" style="display: none;">Version 0.0.2</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

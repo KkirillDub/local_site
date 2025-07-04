@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Контактная информация и форма обратной связи OKTOLOM." />
+    <title>Контакты | OKTOLOM</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo-block">
+                <div class="logo">
+                    EliteSite<br><span>WEB DEVELOPMENT</span>
+                </div>
+                <div class="slogan">
+                    Профессиональная HTML-верстка<br>PSD макетов
+                </div>
+            </div>
+            <!-- Кнопка выбора языка -->
+            <button id="language-toggle" aria-label="Переключить язык" style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">
+                🌐
+            </button>
+
+            <!-- Кнопка и выпадающее меню тем -->
+            <div class="theme-selector" style="margin-right: 60px;">
+                <button id="theme-toggle" aria-haspopup="true" aria-expanded="false">Выбор темы</button>
+
+                <div id="theme-menu" class="theme-menu hidden" aria-label="Меню выбора темы и цвета">
+                    <strong data-lang="ru">Тема:</strong>
+                    <strong data-lang="en" style="display:none;">Theme:</strong>
+                    <button data-theme="light" data-lang="ru">Светлая</button>
+                    <button data-theme="light" data-lang="en" style="display:none;">Light</button>
+                    <button data-theme="dark" data-lang="ru">Тёмная</button>
+                    <button data-theme="dark" data-lang="en" style="display:none;">Dark</button>
+                    <button data-theme="system" data-lang="ru">Системная</button>
+                    <button data-theme="system" data-lang="en" style="display:none;">System</button>
+                    <hr>
+                    <strong data-lang="ru">Цвет:</strong>
+                    <strong data-lang="en" style="display:none;">Color:</strong>
+                    <button data-color="blue" data-lang="ru">Синий</button>
+                    <button data-color="blue" data-lang="en" style="display:none;">Blue</button>
+                    <button data-color="green" data-lang="ru">Зелёный</button>
+                    <button data-color="green" data-lang="en" style="display:none;">Green</button>
+                    <button data-color="purple" data-lang="ru">Фиолетовый</button>
+                    <button data-color="purple" data-lang="en" style="display:none;">Purple</button>
+                    <hr>
+                    <!-- Фон -->
+                     <strong data-lang="ru">Фон:</strong>
+                     <strong data-lang="en" style="display:none;">Background:</strong>
+                     <button data-bg="none" data-lang="ru">Без фона</button>
+                     <button data-bg="none" data-lang="en" style="display:none;">No background</button>
+                     <button data-bg="background1.jpg" data-lang="ru">Фон 1</button>
+                     <button data-bg="background1.jpg" data-lang="en" style="display:none;">Background 1</button>
+                     <button data-bg="background2.jpg" data-lang="ru">Фон 2</button>
+                     <button data-bg="background2.jpg" data-lang="en" style="display:none;">Background 2</button>
+                     <button data-bg="background3.jpg" data-lang="ru">Фон 3</button>
+                     <button data-bg="background3.jpg" data-lang="en" style="display:none;">Background 3</button>
+                     <button data-bg="background4.jpg" data-lang="ru">Фон 4</button>
+                     <button data-bg="background4.jpg" data-lang="en" style="display:none;">Background 4</button>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" data-lang="ru">Главная</a><a href="index.html" data-lang="en" style="display:none;">Home</a></li>
+                <li><a href="process.html" data-lang="ru">Процесс</a><a href="process.html" data-lang="en" style="display:none;">Process</a></li>
+                <li><a href="portfolio.html" data-lang="ru">Примеры работ</a><a href="portfolio.html" data-lang="en" style="display:none;">Portfolio</a></li>
+                <li><a href="order.html" data-lang="ru">Заказать</a><a href="order.html" data-lang="en" style="display:none;">Order</a></li>
+                <li><a href="contacts.html" data-lang="ru" class="active">Контакты</a><a href="contacts.html" class="active" data-lang="en" style="display:none;">Contacts</a></li>
+                <li><a href="help.html" data-lang="ru">Справка</a><a href="help.html" data-lang="en" style="display:none;">Help</a></li>
+                <li><a href="about.html" data-lang="ru">О нас</a><a href="about.html" data-lang="en" style="display:none;">Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <div class="main">
+
+            <div class="content">
+                <h1>Свяжитесь с нами</h1>
+                <p>Вы можете связаться с нашей командой любым удобным способом или оставить сообщение через форму обратной связи.</p>
+
+                <section class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <ul>
+                        <li>Email: <a href="mailto:info@oktocom.ru">info@oktocom.ru</a></li>
+                        <li>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                        <li>
+                            Соцсети:
+                            <a href="#" aria-label="VK">VK</a>,
+                            <a href="https://t.me/elite_site_ru" aria-label="Telegram">Telegram</a>,
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <form id="contact-form" class="contact-form" action="save_message.php" method="POST">
+                    <h2>Форма обратной связи</h2>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+
+                <div id="response-message" style="margin-top:10px; color: green;">
+                    <?php
+                    // Покажем сообщение при возврате из PHP после отправки
+                    if (isset($_GET['status']) && $_GET['status'] === 'success') {
+                    echo "Спасибо! Ваше сообщение сохранено.";
+                    }
+                    if (isset($_GET['status']) && $_GET['status'] === 'error') {
+                    echo "Произошла ошибка при сохранении сообщения.";
+                    }
+                    ?>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="box">
+                    <h3>Наш офис</h3>
+                    <p>г. Москва, ул. Примерная, д. 1, офис 101</p>
+                    <!-- Можно добавить карту здесь -->
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="info-bar">
+                <p data-lang="ru">EliteSite — современная веб-студия по HTML-верстке. Мы превращаем ваши идеи в качественные адаптивные макеты.</p>
+                <p data-lang="en" style="display:none;">EliteSite — modern web studio for HTML layout. We turn your ideas into quality responsive templates.</p>
+                <p data-lang="ru">© 2025 EliteSite. Все права защищены.</p>
+                <p data-lang="en" style="display:none;">© 2025 EliteSite. All rights reserved.</p>
+                <p data-lang="ru" style="display: none;">Версия 0.0.2</p>
+                <p data-lang="en" style="display: none;">Version 0.0.2</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

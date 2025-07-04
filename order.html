@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Заказ услуг веб-разработки в OKTOLOM." />
+  <title>Заказать | OKTOLOM</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/order-form.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Шапка -->
+    <header class="header">
+      <div class="logo-block">
+        <div class="logo">
+          EliteSite<br><span>WEB DEVELOPMENT</span>
+        </div>
+        <div class="slogan">
+          Профессиональная HTML-верстка<br>PSD макетов
+        </div>
+      </div>
+
+      <!-- Языковая кнопка -->
+      <button id="language-toggle" aria-label="Переключить язык"
+        style="position: absolute; top: 10px; right: 10px; background: none; border: none; cursor: pointer; font-size: 1rem;">
+        🌐
+      </button>
+
+      <!-- Меню темы -->
+      <div class="theme-selector" style="margin-right: 60px;">
+        <button id="theme-toggle" aria-haspopup="true" aria-expanded="false">Выбор темы</button>
+        <div id="theme-menu" class="theme-menu hidden" aria-label="Меню выбора темы и цвета">
+          <strong data-lang="ru">Тема:</strong>
+          <strong data-lang="en" style="display:none;">Theme:</strong>
+          <button data-theme="light" data-lang="ru">Светлая</button>
+          <button data-theme="light" data-lang="en" style="display:none;">Light</button>
+          <button data-theme="dark" data-lang="ru">Тёмная</button>
+          <button data-theme="dark" data-lang="en" style="display:none;">Dark</button>
+          <button data-theme="system" data-lang="ru">Системная</button>
+          <button data-theme="system" data-lang="en" style="display:none;">System</button>
+          <hr>
+          <strong data-lang="ru">Цвет:</strong>
+          <strong data-lang="en" style="display:none;">Color:</strong>
+          <button data-color="blue" data-lang="ru">Синий</button>
+          <button data-color="blue" data-lang="en" style="display:none;">Blue</button>
+          <button data-color="green" data-lang="ru">Зелёный</button>
+          <button data-color="green" data-lang="en" style="display:none;">Green</button>
+          <button data-color="purple" data-lang="ru">Фиолетовый</button>
+          <button data-color="purple" data-lang="en" style="display:none;">Purple</button>
+          <hr>
+          <strong data-lang="ru">Фон:</strong>
+          <strong data-lang="en" style="display:none;">Background:</strong>
+          <button data-bg="none" data-lang="ru">Без фона</button>
+          <button data-bg="none" data-lang="en" style="display:none;">No background</button>
+          <button data-bg="background1.jpg" data-lang="ru">Фон 1</button>
+          <button data-bg="background1.jpg" data-lang="en" style="display:none;">Background 1</button>
+          <button data-bg="background2.jpg" data-lang="ru">Фон 2</button>
+          <button data-bg="background2.jpg" data-lang="en" style="display:none;">Background 2</button>
+          <button data-bg="background3.jpg" data-lang="ru">Фон 3</button>
+          <button data-bg="background3.jpg" data-lang="en" style="display:none;">Background 3</button>
+          <button data-bg="background4.jpg" data-lang="ru">Фон 4</button>
+          <button data-bg="background4.jpg" data-lang="en" style="display:none;">Background 4</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" data-lang="ru">Главная</a><a href="index.html" data-lang="en" style="display:none;">Home</a></li>
+        <li><a href="process.html" data-lang="ru">Процесс</a><a href="process.html" data-lang="en" style="display:none;">Process</a></li>
+        <li><a href="portfolio.html" data-lang="ru">Примеры работ</a><a href="portfolio.html" data-lang="en" style="display:none;">Portfolio</a></li>
+        <li><a href="order.html" data-lang="ru" class="active">Заказать</a><a href="order.html" class="active" data-lang="en" style="display:none;">Order</a></li>
+        <li><a href="contacts.html" data-lang="ru">Контакты</a><a href="contacts.html" data-lang="en" style="display:none;">Contacts</a></li>
+        <li><a href="help.html" data-lang="ru">Справка</a><a href="help.html" data-lang="en" style="display:none;">Help</a></li>
+        <li><a href="about.html" data-lang="ru">О нас</a><a href="about.html" data-lang="en" style="display:none;">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="main">
+      <div class="content">
+
+        <h1 data-lang="ru">Заказать услугу</h1>
+        <h1 data-lang="en" style="display:none;">Order a Service</h1>
+
+        <p data-lang="ru">Заполните форму ниже, чтобы оформить заказ на услуги веб-разработки.</p>
+        <p data-lang="en" style="display:none;">Fill out the form below to request web development services.</p>
+
+        <!-- Стандартная форма -->
+        <form action="#" method="post" class="order-form">
+          <label for="name" data-lang="ru">Имя:</label>
+          <label for="name" data-lang="en" style="display:none;">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-lang="ru">Email:</label>
+          <label for="email" data-lang="en" style="display:none;">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="service" data-lang="ru">Услуга:</label>
+          <label for="service" data-lang="en" style="display:none;">Service:</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>—</option>
+            <option value="landing">Создание лендинга</option>
+            <option value="catalog">Интернет-магазин</option>
+            <option value="promo">Промо-сайт</option>
+            <option value="other">Другое</option>
+          </select>
+
+          <label for="message" data-lang="ru">Сообщение:</label>
+          <label for="message" data-lang="en" style="display:none;">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">
+            <span data-lang="ru">Отправить</span>
+            <span data-lang="en" style="display:none;">Submit</span>
+          </button>
+        </form>
+
+        <!-- 🔧 Новый интерактивный конструктор -->
+        <h2 data-lang="ru">Конструктор заказа</h2>
+        <h2 data-lang="en" style="display:none;">Order Builder</h2>
+
+        <form id="calculator-form" class="order-form">
+          <label data-lang="ru">Тип сайта:</label>
+          <label data-lang="en" style="display:none;">Site type:</label>
+          <select id="site-type">
+            <option value="landing">Лендинг</option>
+            <option value="store">Магазин</option>
+            <option value="promo">Промо-сайт</option>
+          </select>
+
+          <label data-lang="ru">Сколько секций:</label>
+          <label data-lang="en" style="display:none;">Number of sections:</label>
+          <input type="number" id="sections" min="1" max="20" value="5" />
+
+          <label>
+            <input type="checkbox" id="adaptivity" />
+            <span data-lang="ru">Адаптивность</span>
+            <span data-lang="en" style="display:none;">Responsive layout</span>
+          </label>
+
+          <button type="button" id="calculate-btn">
+            <span data-lang="ru">Рассчитать</span>
+            <span data-lang="en" style="display:none;">Calculate</span>
+          </button>
+        </form>
+
+        <div id="calc-result" class="result-block" style="margin-top:15px; font-weight:bold;">
+          <p data-lang="ru">Итог: — дней / — ₽</p>
+          <p data-lang="en" style="display:none;">Result: — days / $ —</p>
+        </div>
+
+        <!-- Условия -->
+        <section class="terms">
+          <h2 data-lang="ru">Условия сотрудничества</h2>
+          <h2 data-lang="en" style="display:none;">Terms of Cooperation</h2>
+          <p data-lang="ru">Сроки выполнения и стоимость оговариваются индивидуально после обсуждения деталей заказа.</p>
+          <p data-lang="en" style="display:none;">Deadlines and pricing are discussed individually after reviewing project details.</p>
+        </section>
+      </div>
+
+      <!-- Сайдбар -->
+      <aside class="sidebar">
+        <div class="box">
+          <h3 data-lang="ru">Почему выбирают нас?</h3>
+          <h3 data-lang="en" style="display:none;">Why Choose Us?</h3>
+          <ul>
+            <li data-lang="ru">Точная верстка по макету</li>
+            <li data-lang="en" style="display:none;">Precise layout from your design</li>
+            <li data-lang="ru">Быстрые сроки</li>
+            <li data-lang="en" style="display:none;">Fast turnaround</li>
+            <li data-lang="ru">Поддержка и консультации</li>
+            <li data-lang="en" style="display:none;">Support and consulting</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="info-bar">
+        <p data-lang="ru">EliteSite — современная веб-студия по HTML-верстке. Мы превращаем ваши идеи в качественные адаптивные макеты.</p>
+        <p data-lang="en" style="display:none;">EliteSite — modern web studio for HTML layout. We turn your ideas into quality responsive templates.</p>
+        <p data-lang="ru">© 2025 EliteSite. Все права защищены.</p>
+        <p data-lang="en" style="display:none;">© 2025 EliteSite. All rights reserved.</p>
+        <p data-lang="ru" style="display: none;">Версия 0.0.2</p>
+        <p data-lang="en" style="display: none;">Version 0.0.2</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/order-builder.js"></script>
+</body>
+</html>
